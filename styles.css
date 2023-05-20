@@ -1,0 +1,9 @@
+/* Adding some boiler plate code to make things a little bit more straight 
+forward when it comes to sizing etc */
+
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
