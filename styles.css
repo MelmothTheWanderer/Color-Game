@@ -2,8 +2,108 @@
 forward when it comes to sizing etc */
 
 * { 
-    margin:0;
-    padding:0;
     box-sizing: border-box;
 }
 
+body { 
+    margin:0;
+    padding:0;
+}
+
+.navbar { 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#F8F6F4;
+    color:#333;
+    min-height:50px;
+}
+
+.brand-title { 
+    font-size:3rem;
+    margin:3rem;
+}
+
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navbar-links li { 
+    /* height:50px; */
+    /* background-color:pink; */
+    list-style:none;
+
+}
+   
+.navbar-links li a { 
+    /* margin-top:10px; */
+    /* font-size:2rem; */
+    text-decoration: none;
+    color:#333;
+    padding:3rem;
+    display:block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button { 
+    position:absolute;
+    top:.75rem;
+    right:1.5rem;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    height:30px;
+    width:30px;   
+}
+
+.toggle-button .bar { 
+    height:3px;
+    width:100%;
+    background-color:white;
+    border-radius:10px;
+}
+
+@media (max-width : 640px) {
+    .toggle-button { 
+        display:flex;
+    
+    }
+
+    .navbar-links { 
+        display:none;
+        width:100%;
+    }
+
+    .navbar { 
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .navbar-links ul { 
+        width:100%;
+        flex-direction:column;
+        font-size:2rem;
+    }
+
+    .navbar-links li { 
+        text-align:center;
+    }
+
+    .navbar-links li a { 
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links li :last-child { 
+        margin-bottom: 2rem;
+    }
+
+    .navbar-links.active {
+        display:flex;
+    }
+
+}
