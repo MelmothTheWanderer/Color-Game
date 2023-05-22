@@ -1,6 +1,9 @@
 /* Adding some boiler plate code to make things a little bit more straight 
 forward when it comes to sizing etc */
 
+  @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Gloria+Hallelujah&display=swap');
+
+
 * { 
     box-sizing: border-box;
 }
@@ -52,8 +55,8 @@ body {
 
 .toggle-button { 
     position:absolute;
-    top:.75rem;
-    right:1.5rem;
+    top:2.8rem;
+    right: 3rem;
     display:none;
     flex-direction:column;
     justify-content:space-between;
@@ -64,11 +67,11 @@ body {
 .toggle-button .bar { 
     height:3px;
     width:100%;
-    background-color:white;
+    background-color:#333;
     border-radius:10px;
 }
 
-@media (max-width : 640px) {
+@media (max-width : 670px) {
     .toggle-button { 
         display:flex;
     
@@ -107,3 +110,18 @@ body {
     }
 
 }
+
+/* Styling for the color letters in the header logo */
+
+.color-letter {
+     font-family: 'Chewy', cursive;;
+     font-size:3rem;
+     font-weight:bold;
+     text-transform: uppercase;
+ 
+     transition:color 500ms, font-size 300ms;
+ }
+
+ .color-letter:hover { 
+    font-style: oblique;
+ }

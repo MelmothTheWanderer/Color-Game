@@ -19,4 +19,26 @@ const colorArray = [ 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'viol
 so that we can change the color when the mouse passes over it */
 
 
+const listOfSpans=document.getElementsByClassName('color-letter')
 
+// for (let i = 0; i < listOfSpans.length; i ++){
+// let colorArray = ['Brown', 'DarkOrange', 'gold' , 'DarkOliveGreen ', 'LightSeaGreen', 'MediumVioletRed' ,'Violet' ]
+// let randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+// listOfSpans[i].style.color=randomColor;
+// }
+
+function changeToRandomColor () {
+    let colorArray = ['Brown', 'DarkOrange', 'gold' , 'DarkOliveGreen ', 'LightSeaGreen', 'MediumVioletRed' ,'Violet' ];
+    let randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+    if (this.style.color!= randomColor) {
+        this.style.color=randomColor;
+    }
+    else {
+        this.style.color='black';
+    }
+}
+
+
+for (let i = 0 ; i < listOfSpans.length;i++) {
+    listOfSpans[i].addEventListener('mouseover', changeToRandomColor);
+}
