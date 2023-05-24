@@ -42,7 +42,7 @@ body {
    
 .navbar-links li a { 
     /* margin-top:10px; */
-    /* font-size:2rem; */
+    font-size:2rem;
     text-decoration: none;
     color:#333;
     padding:3rem;
@@ -71,7 +71,7 @@ body {
     border-radius:10px;
 }
 
-@media (max-width : 670px) {
+@media (max-width : 710px) {
     .toggle-button { 
         display:flex;
     
@@ -128,23 +128,40 @@ body {
 
  /* Styling for the game container */
 
+ .score-container { 
+    background-color:blue;
+    font-size:5em;
+    margin:0;
+    padding:0;
+    text-align:center;
+ }
+
+
 
 #game-container { 
 
     background-color: red;
     display:flex;
-    height:100vh;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
     gap:10px;
     border:10px solid black ; 
+    margin:10px;
+    /* max-width:800px; */
 
+}
+
+#buttons { 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
 }
 
 .box { 
     padding:5rem;
-    margin:50px;
+    margin:15px;
     border:5px solid black;
     border-radius:10px;
     background-color: green;
