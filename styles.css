@@ -125,3 +125,30 @@ body {
  .color-letter:hover { 
     font-style: oblique;
  }
+
+ /* Styling for the game container */
+
+
+#game-container { 
+
+    background-color: red;
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    border:10px solid black ; 
+
+}
+
+.box { 
+    padding:5rem;
+    margin:50px;
+    border:5px solid black;
+    border-radius:10px;
+    background-color: green;
+    height:100px;
+    width:100px;
+    display:inline-block;
+}
