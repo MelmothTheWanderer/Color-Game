@@ -26,8 +26,21 @@ function changeToRandomColor () {
 
 for (let i = 0 ; i < listOfSpans.length;i++) {
     listOfSpans[i].addEventListener('mouseover', changeToRandomColor);
+
 }
 
+/*Lets add event listener to all the buttons to test the sounds*/
+
+
 function startGame() {
-    alert('This button worked, game started')
+
+    document.getElementById('game-container').classList.toggle('hidden');
+
+    for (let i = 0 ; i < document.getElementsByClassName('box').length; i ++ ) { 
+        document.getElementsByClassName('box')[i].addEventListener('click', () => {
+            var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
+            audio.play();
+        })
+    }
+
 }

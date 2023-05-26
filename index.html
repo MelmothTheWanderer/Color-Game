@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P2_Project</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7dae2d2962.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Going to get to work on a responsive Navbar-->
@@ -22,7 +23,8 @@
             <span class="color-letter">g</span>
             <span class="color-letter">a</span>
             <span class="color-letter">m</span>
-            <span class="color-letter">e</span>            
+            <span class="color-letter">e</span>     
+                   
         </div>
         <a class="toggle-button" href="#">
             <span class="bar"></span>
@@ -31,9 +33,9 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-                <li><a href="#">Link3</a></li>
+                <li id="link-1"><a href="#">Link1</a></li>
+                <li id="link-2"><a href="#">Link2</a></li>
+                <li id="link-3"><a href="#">Link3</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +43,7 @@
     <!-- <div class="score-container">
         <h2>Score</h2>
     </div> -->
-    <div id="game-container">
+    <div id="game-container" class="hidden">
 
         <div class="score-container">
             <h2>Score</h2>
@@ -57,11 +59,16 @@
             <div class="box seven"></div>
             <div class="box eight"></div>
         </div>
+
+
         <!--Adding a start button to the game-->
+    </div>
+    <div class="start-button-container">
         <button type="button" id="start-button" onclick="startGame()">
             Start
         </button>
     </div>
+
 
 
     <!--Just making sure the javascript link is good to go-->
