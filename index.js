@@ -27,3 +27,7 @@ function changeToRandomColor () {
 for (let i = 0 ; i < listOfSpans.length;i++) {
     listOfSpans[i].addEventListener('mouseover', changeToRandomColor);
 }
+
+function startGame() {
+    alert('This button worked, game started')
+}

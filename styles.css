@@ -134,6 +134,7 @@ body {
     margin:0;
     padding:0;
     text-align:center;
+    flex-basis:100%;
  }
 
 
@@ -149,8 +150,10 @@ body {
     border:10px solid black ; 
     margin:10px;
     /* max-width:800px; */
+    /* display:none; */
 
 }
+/*This is the container for the game buttons */
 
 #buttons { 
     display:flex;
@@ -158,7 +161,7 @@ body {
     align-items:center;
     flex-wrap:wrap;
 }
-
+/*Styling that is applied to all the button */
 .box { 
     padding:5rem;
     margin:15px;
@@ -168,4 +171,43 @@ body {
     height:100px;
     width:100px;
     display:inline-block;
+}
+
+/* Styling that is applied to individual buttons */
+/* 'Brown', 'DarkOrange', 'gold' , 'DarkOliveGreen ', 'LightSeaGreen', 'MediumVioletRed' ,'Violet' ];*/
+
+.box.one { 
+    background-color:brown ;
+}
+
+.box.two { 
+    background-color:darkorange;
+}
+.box.three { 
+    background-color:gold;
+}
+.box.four { 
+    background-color:darkolivegreen;
+}
+.box.five { 
+    background-color:lightseagreen;
+}
+.box.six{ 
+    background-color:mediumvioletred;
+}
+.box.seven { 
+    background-color:violet;
+}
+.box.eight { 
+    background-color:blue;
+}
+
+
+
+#start-button { 
+    height: 100px;
+    width:200px;
+    border-radius:10px;
+    margin:10px;
+    font-size: 3rem ; 
 }
