@@ -180,6 +180,13 @@ body {
     display:inline-block;
 }
 
+/* This is just a test to see if I can make a ring around the active box when the game starts to convey information to the user about the pattern they are to emulate if they 
+are to score a point */
+
+.box.active {
+    border:10px solid gold;
+ }
+
 .box:hover { 
   border:3px solid red;
 }
