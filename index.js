@@ -59,27 +59,27 @@ function makeRandomChoices (level) {
 
 /*TODO : Write a function that will convey the random array to the user so that they can repeat it . Pass makeRandomChoices as an argument*/ 
 
-function revealPatternToUser (choices) {
-    for (let i = 0 ; i < choices.length ; i++) { 
+function revealPatternToUser (choices) { 
 
-        
-        function toggleActiveClass () {
-            listOfGameButtons[choices[i]].classList.toggle('active');
-        }
+    
 
-        function playTheNote () {
-         /*Play the music*/
+    for (let i=0; i< choices.length; i++) {
+    task(i);
+    }
+    
+    function task(i) {
+    setTimeout(function() {
+        listOfGameButtons[choices[i]].classList.toggle('active');
         var audio = new Audio("./assets/audio/note" + [choices[i]] + ".mp3");
         audio.play();
-        }
+        setTimeout(() => {
+            listOfGameButtons[choices[i]].classList.toggle('active');  
+        },1000)
 
- 
-        /* toggle the class off this time */ 
-        // listOfGameButtons[choices[i]].classList.toggle('active');
-        
-
+    }, 1000 * i);
     }
 }
+
 
 /* This is the start of the game. Everything inside of here will be the game , until the game ends */
 
@@ -89,7 +89,7 @@ function startGame() {
     document.getElementById('game-container').classList.toggle('hidden');
     document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
     /* This variable keeps track of the score/level */
-    var gameLevel = 1 
+    var gameLevel = 3
 
     /* todo: write a function that will choose a random pattern based on the game level , then convey this information to the user on screen for them to try and reproduce in 
     order to score a point and progress to the next level */
