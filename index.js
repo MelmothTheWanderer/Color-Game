@@ -80,6 +80,20 @@ function revealPatternToUser (choices) {
     }
 }
 
+/*Make a function that will evaluate the persons input and check it against what the computer has and return a boolean */ 
+    function evaluateUserInput (choices) { 
+        //Creating an array for user input
+
+        // Add event listeners to all the buttons now
+        for (let i = 0 ; i < listOfGameButtons.length; i ++ ) { 
+            document.getElementsByClassName('box')[i].addEventListener('click', () => {
+                var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
+                audio.play();
+                //Add something here that will push the index of the note pressed to the userInput array 
+            })
+        }
+    }
+
 
 /* This is the start of the game. Everything inside of here will be the game , until the game ends */
 
@@ -89,11 +103,10 @@ function startGame() {
     document.getElementById('game-container').classList.toggle('hidden');
     document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
     /* This variable keeps track of the score/level */
-    var gameLevel = 3
+    var gameLevel = 10
 
-    /* todo: write a function that will choose a random pattern based on the game level , then convey this information to the user on screen for them to try and reproduce in 
-    order to score a point and progress to the next level */
 
+    /*Displays a random pattern based on the gameLevel*/
     revealPatternToUser(makeRandomChoices(gameLevel));
 
 
@@ -109,3 +122,4 @@ function startGame() {
         })
     }
 }
+
