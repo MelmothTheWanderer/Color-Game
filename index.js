@@ -54,13 +54,13 @@ var pattern = [] ;
 
 /* this will toggle the game window to display */
 
+/* this will toggle the game window to display */
 function toggleGame () {
     document.getElementById('game-container').classList.toggle('hidden');
     document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
+    adjustScore(score);
     };
     
-
-
 /* Making a constant to store the game buttons */ 
 
 var listOfGameButtons = document.getElementsByClassName('box');
