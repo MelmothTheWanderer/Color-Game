@@ -70,7 +70,23 @@ function initTheGame () {
     //2 Display the game area and hide the start button
     toggleGame();
     addToThePattern()
+    displayPatternToUser(pattern);
     }
+
+//ADD TO THE PATTERN 
+/* This function will return a random choice of button */ 
+
+function addToThePattern () {
+
+    chosenButton = undefined;
+    var possibleButtons = [0,1,2,3,4,5,6,7]
+        /*choose a random number from the possibleButtons array and push it to the chosenButtons array */
+        let randomChoice = possibleButtons[Math.floor(Math.random() * possibleButtons.length)];
+        chosenButton= randomChoice
+        
+     pattern.push(chosenButton);
+    }
+
 
 var listOfGameButtons = document.getElementsByClassName('box');
 
