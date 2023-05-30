@@ -60,8 +60,17 @@ function toggleGame () {
     document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
     adjustScore(score);
     };
-    
-/* Making a constant to store the game buttons */ 
+
+//!! START THE GAME
+function initTheGame () {
+    //1. Rest the score and pattern
+    score = 0 
+    pattern = []
+    adjustScore(score);
+    //2 Display the game area and hide the start button
+    toggleGame();
+    addToThePattern()
+    }
 
 var listOfGameButtons = document.getElementsByClassName('box');
 
