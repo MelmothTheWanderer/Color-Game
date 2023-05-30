@@ -44,14 +44,13 @@ body {
 }
 
 .navbar-links li { 
-    /* height:50px; */
-    /* background-color:pink; */
+
     list-style:none;
 
 }
    
 .navbar-links li a { 
-    /* margin-top:10px; */
+
     font-size:2rem;
     text-decoration: none;
     color:#333;
