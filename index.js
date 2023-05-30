@@ -46,6 +46,12 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
  var listOfGameButtons = document.getElementsByClassName('box');
  var gameContainer = document.getElementById('game-container');
 
+
+//Declare the game variables
+var score = 0 ;
+var pattern = [] ;
+
+
 /* this will toggle the game window to display */
 
 function toggleGame () {
