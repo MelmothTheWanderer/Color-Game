@@ -30,8 +30,11 @@ body {
 }
 
 .brand-title { 
-    font-size:3rem;
-    margin:3rem;
+    font-size:2rem;
+    margin:2rem;
+    text-align:center;
+    text-decoration:none;
+    color:black;
 }
 
 .navbar-links ul {
