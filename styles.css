@@ -11,6 +11,8 @@ forward when it comes to sizing etc */
 body { 
     margin:0;
     padding:0;
+    background-color:white;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .hidden { 
