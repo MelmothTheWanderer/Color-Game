@@ -42,8 +42,9 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
  */
 
 
-var gameLevel = 1
-gamePoints = 0
+ //Declare the variables for DOM elements
+ var listOfGameButtons = document.getElementsByClassName('box');
+ var gameContainer = document.getElementById('game-container');
 
 /* this will toggle the game window to display */
 
