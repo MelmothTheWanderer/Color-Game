@@ -29,7 +29,6 @@ function changeToRandomColor () {
 for (let i = 0 ; i < listOfSpans.length;i++) {
     listOfSpans[i].addEventListener('mouseover', changeToRandomColor);
 
-}
 
 /*
  #####                           #####                       
@@ -42,17 +41,24 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
  */
 
 
+
+
+
+
+
  //Declare the variables for DOM elements
- var listOfGameButtons = document.getElementsByClassName('box');
- var gameContainer = document.getElementById('game-container');
+var listOfGameButtons = document.getElementsByClassName('box');
+var gameContainer = document.getElementById('game-container');
 
 
 //Declare the game variables
 var score = 0 ;
 var pattern = [] ;
 
-
-/* this will toggle the game window to display */
+}
+/* This function when called, will update the score , pass score as an argument */
+function adjustScore (s) {
+    scoreboard.innerText=score; }
 
 /* this will toggle the game window to display */
 function toggleGame () {
@@ -63,15 +69,17 @@ function toggleGame () {
 
 //!! START THE GAME
 function initTheGame () {
-    //1. Rest the score and pattern
-    score = 0 
-    pattern = []
-    adjustScore(score);
-    //2 Display the game area and hide the start button
-    toggleGame();
-    addToThePattern()
-    displayPatternToUser(pattern);
-    }
+//1. Rest the score and pattern
+score = 0 
+pattern = []
+adjustScore(score);
+//2 Display the game area and hide the start button
+toggleGame();
+//!! TEST CODE:
+addToThePattern()
+displayPatternToUser(pattern);
+//END TEST CODE
+}
 
 //ADD TO THE PATTERN 
 /* This function will return a random choice of button */ 
@@ -168,6 +176,8 @@ function listenToUserInput () {
     }
 };
 
-//Start the game by listening to the user input
 
 listenToUserInput(pattern);
+
+
+
