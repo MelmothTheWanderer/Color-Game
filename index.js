@@ -87,6 +87,30 @@ function addToThePattern () {
      pattern.push(chosenButton);
     }
 
+//DISPLAY THE PATTERN TO THE USER
+//Pass pattern as an argument
+
+function displayPatternToUser (p) { 
+
+    for (let i=0; i< p.length; i++) {
+    task(i);
+    }
+    
+    function task(i) {
+    setTimeout(function() {
+        setTimeout(() => {
+            listOfGameButtons[p[i]].classList.toggle('active');  
+        },50)
+
+        var audio = new Audio("./assets/audio/note" + [p[i]] + ".mp3");
+        audio.play();
+        setTimeout(() => {
+            listOfGameButtons[p[i]].classList.toggle('active');  
+        },750)
+
+    }, 750 * i);
+    };
+}
 
 var listOfGameButtons = document.getElementsByClassName('box');
 
