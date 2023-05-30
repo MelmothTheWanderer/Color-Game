@@ -31,6 +31,27 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
 
 }
 
+/*
+ #####                           #####                       
+#     #   ##   #    # ######    #     #  ####  #####  ###### 
+#        #  #  ##  ## #         #       #    # #    # #      
+#  #### #    # # ## # #####     #       #    # #    # #####  
+#     # ###### #    # #         #       #    # #    # #      
+#     # #    # #    # #         #     # #    # #    # #      
+ #####  #    # #    # ######     #####   ####  #####  ###### 
+ */
+
+
+var gameLevel = 1
+gamePoints = 0
+
+/* this will toggle the game window to display */
+
+function toggleGame () {
+    document.getElementById('game-container').classList.toggle('hidden');
+    document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
+    };
+    
 
 
 /* Making a constant to store the game buttons */ 
@@ -78,48 +99,82 @@ function revealPatternToUser (choices) {
 
     }, 1000 * i);
     }
+
+    evaluateUserInput(choices);
+
 }
 
 /*Make a function that will evaluate the persons input and check it against what the computer has and return a boolean */ 
-    function evaluateUserInput (choices) { 
-        //Creating an array for user input
+    function evaluateUserInput (choices) {
+        let x = 0 
+        var userChoices = [];
 
         // Add event listeners to all the buttons now
         for (let i = 0 ; i < listOfGameButtons.length; i ++ ) { 
             document.getElementsByClassName('box')[i].addEventListener('click', () => {
                 var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
                 audio.play();
-                //Add something here that will push the index of the note pressed to the userInput array 
+                //Add something here that check user input against the computers input
+                userChoices.push(i);
+                if (userChoices.toString() === choices.toString()) {
+                    gameLevel += 1 ; 
+                    adjustScore(gameLevel);
+
+
+                }
+                for (let x = 0 ; x < choices.length; x++) {
+                    if (i === choices[x]) {
+                        var audio = new Audio("./assets/audio/correct.mp3");
+                        audio.play();
+                    }
+
+                    else {
+                    var audio = new Audio("./assets/audio/incorrect.mp3");
+                    audio.play();
+                    toggleGame();
+                    }
+
+                }
+
+                
             })
-        }
     }
+}
+
+    /*Write a fuction that will start the next round */
+
+
 
 
 /* This is the start of the game. Everything inside of here will be the game , until the game ends */
 
 function startGame() {
 
+    toggleGame();
+
+
     /* This gets rid of the start button and displays the game as the game starts */
-    document.getElementById('game-container').classList.toggle('hidden');
-    document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
+
     /* This variable keeps track of the score/level */
-    var gameLevel = 10
+
 
 
     /*Displays a random pattern based on the gameLevel*/
     revealPatternToUser(makeRandomChoices(gameLevel));
 
 
+
     
     /* Adding event listeners to all of the game buttons and playing the corresponding note on click .*/
-    for (let i = 0 ; i < listOfGameButtons.length; i ++ ) { 
-        document.getElementsByClassName('box')[i].addEventListener('click', () => {
-            var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
-            audio.play();
-            /*This is just for testing the score and will be changed later*/
-            gameLevel += 1 ; 
-            adjustScore(gameLevel);
-        })
-    }
+//     for (let i = 0 ; i < listOfGameButtons.length; i ++ ) { 
+//         document.getElementsByClassName('box')[i].addEventListener('click', () => {
+//             var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
+//             audio.play();
+//             /*This is just for testing the score and will be changed later*/
+//             gameLevel += 1 ; 
+//             adjustScore(gameLevel);
+//         })
+//     }
 }
+
 
