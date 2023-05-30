@@ -112,6 +112,62 @@ function displayPatternToUser (p) {
     };
 }
 
+//!! LISTEN TO USERS INPUT
+
+function listenToUserInput () {
+
+
+    timesClicked = 0 ;
+    userGuesses = [];
+    // Add event listeners to all the buttons now
+    for (let i = 0 ; i < listOfGameButtons.length; i ++ ) { 
+        listOfGameButtons[i].addEventListener('click', () => {
+
+            //Code to execute on click of button : 
+
+            var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
+            audio.play();
+            //!! TEST CODE: 
+            console.log(`The i value is ${i}`);
+            //what to do when guess is correct: 
+            if (i === pattern[timesClicked]) {
+                var audio = new Audio("./assets/audio/correct.mp3");
+                audio.play()
+                userGuesses.push(i);
+            };
+            //What to do when guess is incorrect: 
+            if (i !== pattern[timesClicked]) {
+                var audio = new Audio("./assets/audio/gameover.mp3");
+                audio.play();
+                gameContainer.innerHTML="<h1 class = 'game-over'>Your score is : " + score + "</h1><h1 class='reload-text'>The game will reload in 3 seconds</h1>"
+                setTimeout(() => {
+                    window.location.reload();
+                },4000);
+            }
+            //Keep track of how many times clicked
+            if (timesClicked < pattern.length) {
+                timesClicked += 1;
+            }
+            //What to do when the guesses match perfectly
+
+            if (userGuesses.toString() === pattern.toString()) {
+                score += 1 ; 
+                addToThePattern();
+                adjustScore(score);
+                timesClicked=0;
+                userGuesses=[];
+                //Start the game over but leave a little room for a delay . 
+
+                setTimeout(() => {
+                    displayPatternToUser(pattern)  
+                },1000)
+        
+            }
+
+        })
+    }
+};
+
 var listOfGameButtons = document.getElementsByClassName('box');
 
 /* This function when called, will update the score , pass gameLevel as an argument */
