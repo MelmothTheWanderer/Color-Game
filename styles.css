@@ -1,7 +1,7 @@
 /* Adding some boiler plate code to make things a little bit more straight 
 forward when it comes to sizing etc */
 
-  @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Gloria+Hallelujah&display=swap');
 
 
 * { 
@@ -16,7 +16,7 @@ body {
 }
 
 .hidden { 
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .navbar { 
@@ -59,29 +59,28 @@ body {
 }
 
 .navbar-links li:hover, .navbar-links li a:hover {
-    background-color: LightSeaGreen;
-    color:brown;
+   font-size: 3rem;
 }
 
 .toggle-button { 
     position:absolute;
-    top:2.8rem;
+    top:5rem;
     right: 3rem;
     display:none;
     flex-direction:column;
     justify-content:space-between;
-    height:30px;
-    width:30px;   
+    height:50px;
+    width:50px;   
 }
 
 .toggle-button .bar { 
-    height:3px;
+    height:6px;
     width:100%;
     background-color:#333;
     border-radius:10px;
 }
 
-@media (max-width : 710px) {
+@media (max-width : 820px) {
     .toggle-button { 
         display:flex;
     
@@ -121,11 +120,13 @@ body {
 
 }
 
+
+
 /* Styling for the color letters in the header logo */
 
 .color-letter {
      font-family: 'Chewy', cursive;;
-     font-size:3rem;
+     font-size:2rem;
      font-weight:bold;
      text-transform: uppercase;
  
@@ -151,7 +152,6 @@ body {
 /*This is the container for the entire game area */
 #game-container { 
 
-    /* background-color: red; */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -172,6 +172,7 @@ body {
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
+    box-sizing: border-box;
 }
 /*Styling that is applied to all the button */
 .box { 
@@ -183,13 +184,14 @@ body {
     height:100px;
     width:100px;
     display:inline-block;
+    box-sizing: border-box;
 }
 
 /* This is just a test to see if I can make a ring around the active box when the game starts to convey information to the user about the pattern they are to emulate if they 
 are to score a point */
 
 .box.active {
-    border:10px solid gold;
+    border:5px dashed chartreuse;
  }
 
 .box:hover { 
@@ -233,11 +235,16 @@ are to score a point */
     align-items:center;
 }
 
-#start-button { 
+#start-button {
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     height: 100px;
     width:200px;
     border-radius:10px;
-    margin:10px;
     font-size: 3rem ; 
 }
 
@@ -251,5 +258,39 @@ footer {
 .footer-links { 
     display:flex;
     justify-content: space-around;
+    font-size:2rem;
+}
+
+.game-over {
+    font-size:3rem;
+    text-align: center;
+}
+
+.reload-text {
+    flex-basis: 100%;
+    /* color:red; */
+    text-align:center;
+    font-style:italic;
+}
+
+/* The styles for the how to play page will be here . */
+
+.rules {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    margin: 50px 12.5%;
+}
+
+
+#rules-header { 
+    text-align:center;
+    display:block;
+    font-size:5rem;
+}
+
+#rules-paragraph { 
     font-size:2rem;
 }
