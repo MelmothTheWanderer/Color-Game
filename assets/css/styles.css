@@ -152,12 +152,10 @@ body {
     }
 
 
-.brand-title { 
-    font-size:1rem;
-    margin:2rem;
-}
-
-
+    .brand-title { 
+        font-size:1rem;
+        margin:2rem;
+    }
 
 }
 
@@ -175,14 +173,11 @@ body {
     }
 
     .toggle-button {
-        height:20px;
-        width:20px;
+        height:30px;
+        width:30px;
         top:30px;
     }
 
-    #start-button {
-        top: 100px !important;
-}
 
     .box.active {
         border:5px dashed chartreuse !important;
@@ -190,7 +185,8 @@ body {
 
     .navbar-links li a { 
 
-        font-size:3rem;
+        font-size:2rem;
+        margin-left:25px;
     }
 
     .navbar-links li:hover, .navbar-links li a:hover {
@@ -325,7 +321,7 @@ are to score a point */
 
 
 .game-over {
-    font-size:3rem;
+    font-size:5rem;
     text-align: center;
 }
 
@@ -334,6 +330,7 @@ are to score a point */
     /* color:red; */
     text-align:center;
     font-style:italic;
+    font-size:2.5rem;
 }
 
 /* The styles for the how to play page will be here . */
