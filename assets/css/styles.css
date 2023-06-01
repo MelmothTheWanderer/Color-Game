@@ -327,6 +327,16 @@ are to score a point */
         font-size:1.25;
     }
 
+    #rules-header { 
+        text-align:center;
+        display:block;
+        font-size:2rem;
+    }
+    
+    #rules-paragraph { 
+        font-size:1rem;
+    }
+
 }
 
 @media (max-width:480px) {
@@ -372,14 +382,6 @@ are to score a point */
         font-size:1.25 !important;
     }
 
-    #rules-header { 
-        text-align:center;
-        display:block;
-        font-size:2rem;
-    }
-    
-    #rules-paragraph { 
-        font-size:1rem;
-    }
+
 
 }
