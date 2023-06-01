@@ -42,11 +42,7 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
 
 
 
-
-
-
-
- //Declare the variables for DOM elements
+//Declare the variables for DOM elements
 var listOfGameButtons = document.getElementsByClassName('box');
 var gameContainer = document.getElementById('game-container');
 
@@ -54,8 +50,8 @@ var gameContainer = document.getElementById('game-container');
 //Declare the game variables
 var score = 0 ;
 var pattern = [] ;
-
 }
+
 /* This function when called, will update the score , pass score as an argument */
 function adjustScore (s) {
     scoreboard.innerText=score; }
@@ -75,10 +71,9 @@ pattern = []
 adjustScore(score);
 //2 Display the game area and hide the start button
 toggleGame();
-//!! TEST CODE:
 addToThePattern()
 displayPatternToUser(pattern);
-//END TEST CODE
+
 }
 
 //ADD TO THE PATTERN 
