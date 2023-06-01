@@ -118,7 +118,18 @@ body {
         display:flex;
     }
 
+    .score-container { 
+
+        font-size:.5em;
+        margin:0;
+        padding:0;
+        text-align:center;
+        flex-basis:100%;
+     }
+
 }
+
+
 
 
 
@@ -140,12 +151,13 @@ body {
  /* Styling for the game container */
 
  .score-container { 
-    /* background-color:blue; */
-    font-size:5em;
+
+    font-size:1.5em;
     margin:0;
     padding:0;
     text-align:center;
     flex-basis:100%;
+    /* background-color: blue; */
  }
 
 
@@ -157,12 +169,8 @@ body {
     align-items:center;
     flex-wrap:wrap;
     gap:10px;
-    /* border:10px solid black ;  */
     margin:10px;
     border-radius:10px;
-    /* max-width:800px; */
-    /* display:none; */
-
 }
 
 /*This is the container for the game buttons */
@@ -171,18 +179,17 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 /*Styling that is applied to all the button */
 .box { 
-    padding:5rem;
-    margin:15px;
+
+    margin:.5rem;
     border:5px solid black;
     border-radius:10px;
-    background-color: green;
-    height:100px;
-    width:100px;
+    height:75px;
+    width:75px;
     display:inline-block;
     box-sizing: border-box;
 }
@@ -248,18 +255,6 @@ are to score a point */
     font-size: 3rem ; 
 }
 
-footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    margin:2rem 0;
-}
-
-.footer-links { 
-    display:flex;
-    justify-content: space-around;
-    font-size:2rem;
-}
 
 .game-over {
     font-size:3rem;
@@ -294,3 +289,4 @@ footer {
 #rules-paragraph { 
     font-size:2rem;
 }
+
