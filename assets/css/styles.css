@@ -355,16 +355,11 @@ are to score a point */
         font-size: 4rem;
      }
 
-     .game-over {
+    .game-over {
         font-size:2.5rem !important;
-        text-align: center;
     }
     
     .reload-text {
-        flex-basis: 100%;
-        /* color:red; */
-        text-align:center;
-        font-style:italic;
         font-size:1.25rem !important;
     }
 
