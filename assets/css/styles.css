@@ -320,11 +320,11 @@ are to score a point */
 
 
     .game-over {
-        font-size:1.5;
+        font-size:3rem;
     }
     
     .reload-text {
-        font-size:1.25;
+        font-size:1.5;
     }
 
     #rules-header { 
@@ -380,6 +380,14 @@ are to score a point */
     
     .reload-text {
         font-size:1.25 !important;
+    }
+
+    .game-over {
+        font-size:2rem;
+    }
+    
+    .reload-text {
+        font-size:1;
     }
 
 
