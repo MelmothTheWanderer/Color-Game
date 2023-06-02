@@ -3,8 +3,6 @@
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-/* Scoreboard */
-var scoreboard = document.getElementById("score")
 
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
@@ -42,13 +40,14 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
  */
 
 //Declare the variables for DOM elements
-var listOfGameButtons = document.getElementsByClassName('box');
-var gameContainer = document.getElementById('game-container');
+const listOfGameButtons = document.getElementsByClassName('box');
+const gameContainer = document.getElementById('game-container');
+const scoreboard = document.getElementById("score");
 
 
 //Declare the game variables
-var score = 0 ;
-var pattern = [] ;
+let score = 0 ;
+let pattern = [] ;
 
 /* This function when called, will update the score , pass score as an argument */
 function adjustScore (score) {
@@ -79,7 +78,7 @@ displayPatternToUser(pattern);
 function addToThePattern () {
 
     chosenButton = undefined;
-    var possibleButtons = [0,1,2,3,4,5,6,7]
+    let possibleButtons = [0,1,2,3,4,5,6,7]
         /*choose a random number from the possibleButtons array and push it to the chosenButtons array */
         let randomChoice = possibleButtons[Math.floor(Math.random() * possibleButtons.length)];
         chosenButton= randomChoice
@@ -102,7 +101,7 @@ function displayPatternToUser (p) {
             listOfGameButtons[p[i]].classList.toggle('active');  
         },50)
 
-        var audio = new Audio("./assets/audio/note" + [p[i]] + ".mp3");
+        let audio = new Audio("./assets/audio/note" + [p[i]] + ".mp3");
         audio.play();
         setTimeout(() => {
             listOfGameButtons[p[i]].classList.toggle('active');  
@@ -125,19 +124,19 @@ function listenToUserInput () {
 
             //Code to execute on click of button : 
 
-            var audio = new Audio("./assets/audio/note" + [i] + ".mp3");
+            let audio = new Audio("./assets/audio/note" + [i] + ".mp3");
             audio.play();
             //!! TEST CODE: 
             console.log(`The i value is ${i}`);
             //what to do when guess is correct: 
             if (i === pattern[timesClicked]) {
-                var audio = new Audio("./assets/audio/correct.mp3");
+                let audio = new Audio("./assets/audio/correct.mp3");
                 audio.play()
                 userGuesses.push(i);
             };
             //What to do when guess is incorrect: 
             if (i !== pattern[timesClicked]) {
-                var audio = new Audio("./assets/audio/gameover.mp3");
+                let audio = new Audio("./assets/audio/gameover.mp3");
                 audio.play();
                 gameContainer.innerHTML="<h1 class = 'game-over'>Your score is : " + score + "</h1><h1 class='reload-text'>The game will reload in 3 seconds</h1>"
                 setTimeout(() => {
