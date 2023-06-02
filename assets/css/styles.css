@@ -135,8 +135,8 @@ body {
     margin:.5rem;
     border:5px solid black;
     border-radius:10px;
-    height:200px;
-    width:200px;
+    height:175px;
+    width:175px;
     display:inline-block;
     box-sizing: border-box;
 }
@@ -210,7 +210,6 @@ are to score a point */
 
 .reload-text {
     flex-basis: 100%;
-    /* color:red; */
     text-align:center;
     font-style:italic;
     font-size:1rem;
