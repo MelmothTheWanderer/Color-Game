@@ -1,7 +1,7 @@
 # Color Game
 ## An interactive musical memory game.
 
-!['Image of how the website looks across different screen resolutions](./assets/images/responsivedesign.png)
+!['Image of how the website looks across different screen resolutions](./assets/images/responsivedesign2.png)
 
 The idea behind "Color-Game" is to provide an interactive exercise that will test the users memory.  
 The game has both a visual component and an auditory component.
