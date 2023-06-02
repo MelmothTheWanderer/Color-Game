@@ -29,6 +29,7 @@ function changeToRandomColor () {
 for (let i = 0 ; i < listOfSpans.length;i++) {
     listOfSpans[i].addEventListener('mouseover', changeToRandomColor);
 
+}
 
 /*
  #####                           #####                       
@@ -40,8 +41,6 @@ for (let i = 0 ; i < listOfSpans.length;i++) {
  #####  #    # #    # ######     #####   ####  #####  ###### 
  */
 
-
-
 //Declare the variables for DOM elements
 var listOfGameButtons = document.getElementsByClassName('box');
 var gameContainer = document.getElementById('game-container');
@@ -50,10 +49,9 @@ var gameContainer = document.getElementById('game-container');
 //Declare the game variables
 var score = 0 ;
 var pattern = [] ;
-}
 
 /* This function when called, will update the score , pass score as an argument */
-function adjustScore (s) {
+function adjustScore (score) {
     scoreboard.innerText=score; }
 
 /* this will toggle the game window to display */
@@ -73,7 +71,6 @@ adjustScore(score);
 toggleGame();
 addToThePattern()
 displayPatternToUser(pattern);
-
 }
 
 //ADD TO THE PATTERN 
