@@ -395,7 +395,6 @@ are to score a point */
     justify-content: center;
     align-items: center;
     height:100vh;
-    /* background-color: blue; */
     text-align: center;
     text-decoration: none;
 }
@@ -406,5 +405,5 @@ are to score a point */
 }
 
 .error-text {
-    font-size: 10rem;
+    font-size: 5rem;
 }
