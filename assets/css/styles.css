@@ -324,7 +324,7 @@ are to score a point */
     }
     
     .reload-text {
-        font-size:1.5;
+        font-size:1.5rem;
     }
 
     #rules-header { 
@@ -383,7 +383,7 @@ are to score a point */
     }
     
     .reload-text {
-        font-size:1;
+        font-size:1rem;
     }
 
 
