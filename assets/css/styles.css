@@ -37,6 +37,7 @@ body {
     color:black;
 }
 
+
 .navbar-links ul {
     margin:0;
     padding:0;
@@ -388,4 +389,23 @@ are to score a point */
 
 
 
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    /* background-color: blue; */
+    text-align: center;
+    text-decoration: none;
+}
+
+.error-container a {
+    text-decoration: none;
+    color:black;
+}
+
+.error-text {
+    font-size: 10rem;
 }
