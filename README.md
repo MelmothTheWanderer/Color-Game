@@ -71,7 +71,7 @@ I have done the following to maintain accessibility.
 
 The languages used in this project were HTML , CSS , and Javascript
 
-## Programs and resources used
+### Programs and resources used
 
 - [Virtual Studio](https://code.visualstudio.com/download) was used as my IDE.
 - [Github](https://github.com/) was used for version control. 
@@ -83,6 +83,46 @@ The languages used in this project were HTML , CSS , and Javascript
 - [JSHint](https://jshint.com) was used to validate and lint the javascript.
 - [Beautifier](https://beautifier.io/) was used to automatically make indentation cosistent.
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/) was used to audit the site for accessibility.
+
+## Testing
+
+I tested the HTML and CSS using the [W3C](https://validator.w3.org/) validators: 
+
+![HTML Validation ](./assets/images/HTML%20validation.png)
+
+I used the same website to validate my CSS code: 
+
+![CSS Validation](./assets/images/CSSValidation.png)
+
+For my Javascript validation I used [JSHint](https://jshint.com/)
+
+For accesability testing I used Lighthouse : 
+
+!["Lighthouse Score"](./assets/images/lighthouse.png)  
+
+For testing resposiveness I used the live server extenstion in VSCode, but also Chrome dev tools . 
+
+## Deployment 
+
+
+I used Github pages for the deployment of this project. Github makes this a really easy process: 
+
+- Log into Github
+- Navigate to the repository that you wish to deploy.  
+- Go to the settings page for that repository.   
+- Scroll down to a tab called "Pages".  
+- You should see a "sources" drop down menu where you can select the branch. In my experience this is usually "master".  
+- Click save and wait a little moment before refreshing. There ought to be a link to your live page if all went well.
+
+## Other resources used
+
+[W3S](https://www.w3schools.com/) was an invaluable resource for a quick recap on something that I've forgotten.
+
+## Acknowledgments
+
+   - Derek MCAuley, massive help and motivation. 
+
+
 
 
 
