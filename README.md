@@ -3,6 +3,8 @@
 
 !['Image of how the website looks across different screen resolutions](./assets/images/responsivedesign2.png)
 
+## Basic Concept
+
 The idea behind "Color-Game" is to provide an interactive exercise that will test the users memory.  
 The game has both a visual component and an auditory component.
 Eight colorful buttons are presented to the user after they begin the game. Each of these buttons corresponds to a note on the major scale.  
@@ -39,6 +41,42 @@ The only other font I have used is for the link to the about page and the score.
 I opted for a font called "Gloria Hallelujah" , also found on Google Fonts.
 
 !["Example of the Gloria Hallelujah font"](./assets/images/GloriaHallelujahFontExample.png)
+
+
+## Features Left to Implement
+
+In the future, I would like to:
+
+- add listeners for keystrokes so that the game can be more easily played by those with impaired vision.
+
+- Allow users to list their score on a scoreboard along with their name. 
+
+- Perhaps change the background as you get to higher levels, and allow encouraging messages to appear on screen, to cheer the player on.
+
+- Allow for a head to head mode, where on the pattern isn't computer generated , but chosen by an opposing player. By guessing the correct pattern , the player gets to choose the next pattern, which their opponent will have to reproduce.
+
+## Accessibility
+
+I have done the following to maintain accessibility.
+
+-Using aria labels.
+-Making sure that the background and the foreground don't contrast.
+-Make sure that text is legible.
+-Used Lighthouse to ensure a decent level of accessibility
+!["Lighthouse Score"](./assets/images/lighthouse.png)  
+
+## Technologies used
+
+### Languages used
+
+The languages used in this project were HTML , CSS , and Javascript
+
+##Programs and resources used.
+
+- [Freesound](https://www.freesound.org) was used for all of the sounds throughout the game. 
+- [Color Hunt](https://www.colorhunt.co) was used to get ideas for colors. 
+
+
 
 
 
