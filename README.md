@@ -20,7 +20,7 @@ This game is intended for anyone looking for a light memory exercise to improve 
 
 The buttons of the game needed to stand out above all, and so I opted to keep the color scheme quite simple. The navigation bar is a subtle off-white color, to differntiate it from the body of the page, which is quite simply white.
 
-Where the only colors come from the game buttons, which are a variation of the colors of the rainbow. These stand out nicely against the white background, especially with the little bit of a black border.  
+The colours come from the game buttons, which are a variation of the colors of the rainbow. These stand out nicely against the white background, especially with the little bit of a black border.  
 
 !["Button colour palette"](./assets/images/ColorPalette.png)
 
@@ -34,6 +34,11 @@ I wanted to choose a font that was bubbly and almost childish , because the brig
 The font that I have chosen for the logo is called "Chewy" and I found it on Google fonts and imported it into the css of my project.
 
 !["Chewy Font Example"](./assets/images/chewyfont.png)
+
+The only other font I have used is for the link to the about page and the score. Again , I wanted to keep with the light bubbly childish theme, but wanted a different font to diffrenciate from the logo  
+I opted for a font called "Gloria Hallelujah" , also found on Google Fonts.
+
+!["Example of the Gloria Hallelujah font"](./assets/images/GloriaHallelujahFontExample.png)
 
 
 
