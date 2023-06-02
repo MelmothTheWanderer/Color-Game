@@ -204,7 +204,7 @@ are to score a point */
 
 
 .game-over {
-    font-size:3rem;
+    font-size:5rem;
     text-align: center;
 }
 
@@ -212,7 +212,7 @@ are to score a point */
     flex-basis: 100%;
     text-align:center;
     font-style:italic;
-    font-size:1rem;
+    font-size:2rem;
 }
 
 /* The styles for the how to play page will be here . */
