@@ -11,7 +11,7 @@ toggleButton.addEventListener('click', () => {
 /* Change the color of the Letters on hover */
 
 // Define the color spans as as variable
-const listOfSpans=document.getElementsByClassName('color-letter')
+const listOfSpans=document.getElementsByClassName('color-letter');
 //Write a function that will Change an elements color property to a random color
 function changeToRandomColor () {
     let colorArray = ['Brown', 'DarkOrange', 'gold' , 'DarkOliveGreen ', 'LightSeaGreen', 'MediumVioletRed' ,'Violet' ];
@@ -58,17 +58,17 @@ function toggleGame () {
     document.getElementById('game-container').classList.toggle('hidden');
     document.getElementsByClassName('start-button-container')[0].classList.toggle('hidden');
     adjustScore(score);
-    };
+    }
 
 //!! START THE GAME
 function initTheGame () {
 //1. Rest the score and pattern
-score = 0 
-pattern = []
+score = 0 ;
+pattern = [];
 adjustScore(score);
 //2 Display the game area and hide the start button
 toggleGame();
-addToThePattern()
+addToThePattern();
 displayPatternToUser(pattern);
 }
 
@@ -78,10 +78,10 @@ displayPatternToUser(pattern);
 function addToThePattern () {
 
     chosenButton = undefined;
-    let possibleButtons = [0,1,2,3,4,5,6,7]
+    let possibleButtons = [0,1,2,3,4,5,6,7];
         /*choose a random number from the possibleButtons array and push it to the chosenButtons array */
         let randomChoice = possibleButtons[Math.floor(Math.random() * possibleButtons.length)];
-        chosenButton= randomChoice
+        chosenButton= randomChoice;
         
      pattern.push(chosenButton);
     }
@@ -98,17 +98,17 @@ function displayPatternToUser (p) {
     function task(i) {
     setTimeout(function() {
         setTimeout(() => {
-            listOfGameButtons[p[i]].classList.toggle('active');  
-        },50)
-
+            listOfGameButtons[p[i]].classList.toggle('active');
+        }, 50);
+        
         let audio = new Audio("./assets/audio/note" + [p[i]] + ".mp3");
         audio.play();
         setTimeout(() => {
             listOfGameButtons[p[i]].classList.toggle('active');  
-        },750)
+        },750);
 
     }, 750 * i);
-    };
+    }
 }
 
 //!! LISTEN TO USERS INPUT
@@ -131,14 +131,14 @@ function listenToUserInput () {
             //what to do when guess is correct: 
             if (i === pattern[timesClicked]) {
                 let audio = new Audio("./assets/audio/correct.mp3");
-                audio.play()
+                audio.play();
                 userGuesses.push(i);
-            };
+            }
             //What to do when guess is incorrect: 
             if (i !== pattern[timesClicked]) {
                 let audio = new Audio("./assets/audio/gameover.mp3");
                 audio.play();
-                gameContainer.innerHTML="<h1 class = 'game-over'>Your score is : " + score + "</h1><h1 class='reload-text'>The game will reload in 3 seconds</h1>"
+                gameContainer.innerHTML="<h1 class = 'game-over'>Your score is : " + score + "</h1><h1 class='reload-text'>The game will reload in 3 seconds</h1>";
                 setTimeout(() => {
                     window.location.reload();
                 },4000);
@@ -158,15 +158,13 @@ function listenToUserInput () {
                 //Start the game over but leave a little room for a delay . 
 
                 setTimeout(() => {
-                    displayPatternToUser(pattern)  
-                },1000)
+                    displayPatternToUser(pattern);
+                },1000);
         
             }
-
-        })
+        });
     }
-};
-
+}
 
 listenToUserInput(pattern);
 
