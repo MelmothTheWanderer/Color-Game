@@ -59,8 +59,8 @@ body {
     display:block;
 }
 
-.navbar-links li:hover, .navbar-links li a:hover {
-   font-size: 6rem;
+.navbar-links li :hover {
+  text-decoration: underline;
 }
 
 .toggle-button { 
@@ -355,7 +355,7 @@ are to score a point */
     .toggle-button {
         height:40px;
         width:40px;
-        top:30px;
+        top:23px;
         right:25px;
     }
 
@@ -369,10 +369,6 @@ are to score a point */
         font-size:2rem;
         margin-left:25px;
     }
-
-    .navbar-links li:hover, .navbar-links li a:hover {
-        font-size: 4rem;
-     }
 
     .game-over {
         font-size:1.5rem !important;
