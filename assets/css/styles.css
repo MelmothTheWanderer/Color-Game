@@ -320,7 +320,7 @@ are to score a point */
 
 
     .game-over {
-        font-size:2rem;
+        font-size:3rem;
     }
     
     .reload-text {
@@ -371,7 +371,7 @@ are to score a point */
     }
 
     .game-over {
-        font-size:1.5rem !important;
+        font-size:2rem !important;
     }
     
     .reload-text {

@@ -59,10 +59,10 @@ In the future, I would like to:
 
 I have done the following to maintain accessibility.
 
--Using aria labels.
--Making sure that the background and the foreground don't contrast.
--Make sure that text is legible.
--Used Lighthouse to ensure a decent level of accessibility
+-Using aria labels.  
+-Making sure that the background and the foreground don't contrast.  
+-Make sure that text is legible.  
+-Used Lighthouse to ensure a decent level of accessibility  
 !["Lighthouse Score"](./assets/images/lighthouse.png)  
 
 ## Technologies used
@@ -71,10 +71,19 @@ I have done the following to maintain accessibility.
 
 The languages used in this project were HTML , CSS , and Javascript
 
-##Programs and resources used.
+## Programs and resources used
 
+- [Virtual Studio](https://code.visualstudio.com/download) was used as my IDE.
+- [Github](https://github.com/) was used for version control. 
+- [Google Fonts](https://fonts.google.com/) was used for all the fonts.
 - [Freesound](https://www.freesound.org) was used for all of the sounds throughout the game. 
-- [Color Hunt](https://www.colorhunt.co) was used to get ideas for colors. 
+- [Color Hunt](https://www.colorhunt.co) was used to get ideas for colors.
+- [GIMP](https://www.gimp.org/) image editor was used to make images for this readme file and for the favicon.
+- [W3C](https://www.w3.org/) was used to validate and lint the HTML and CSS.
+- [JSHint](https://jshint.com) was used to validate and lint the javascript.
+- [Beautifier](https://beautifier.io/) was used to automatically make indentation cosistent.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) was used to audit the site for accessibility.
+
 
 
 
