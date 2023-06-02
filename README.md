@@ -20,11 +20,20 @@ This game is intended for anyone looking for a light memory exercise to improve 
 
 The buttons of the game needed to stand out above all, and so I opted to keep the color scheme quite simple. The navigation bar is a subtle off-white color, to differntiate it from the body of the page, which is quite simply white.
 
-Where the only colors come from the game buttons, which are a variation of the colors of the rainbow. These stand out nicely against the white background, especially with the little bit of a black border. 
+Where the only colors come from the game buttons, which are a variation of the colors of the rainbow. These stand out nicely against the white background, especially with the little bit of a black border.  
+
+!["Button colour palette"](./assets/images/ColorPalette.png)
 
 The only other use of colour is in the "Color Game" logo. As the user hovers their mouse of the letters they change from black to a random color that is within the palette of the game, a variation on the colors of the rainbow.
 
-## 
+!["logo before and after"](./assets/images/logobeforeafter.png)
+
+### Choice of font
+
+I wanted to choose a font that was bubbly and almost childish , because the bright colors of the game remind me of crayons and childrens drawings.  
+The font that I have chosen for the logo is called "Chewy" and I found it on Google fonts and imported it into the css of my project.
+
+!["Chewy Font Example"](./assets/images/chewyfont.png)
 
 
 
